@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
-
+    
     <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
 
     <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
@@ -63,7 +63,7 @@
 
                 {% if user.is_authenticated %}
                 <li><a href="{% url 'myproduct' %}" class="nav-link">My Products</a></li>
-                <li><a href="{% url 'order' %}" class="nav-link">Buy</a></li>
+                <li><a href="#" class="nav-link">Buy</a></li>
                 <li><a href="{% url 'userprofile' %}" class="nav-link">{{user.first_name}}</a></li>
                 <li><a href="{% url 'logout_user' %}" class="nav-link">log Out</a></li>
                 {% else %}
